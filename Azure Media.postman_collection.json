@@ -1,0 +1,1160 @@
+{
+	"info": {
+		"name": "Azure Media",
+		"_postman_id": "eccbd2d8-20b1-1bdc-1d5d-ad692665bb78",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REST API",
+			"description": "",
+			"item": [
+				{
+					"name": "AMS List APIs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List AccessPolicies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/AccessPolicies",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"AccessPolicies"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Locators",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Locators",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Locators"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ContentKeys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/ContentKeys",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"ContentKeys"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ContentKeyAuthorizationPolicyOptions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/ContentKeyAuthorizationPolicyOptions",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"ContentKeyAuthorizationPolicyOptions"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ContentKeyAuthorizationPolicies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/ContentKeyAuthorizationPolicies",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"ContentKeyAuthorizationPolicies"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Files",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Files",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Files"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Assets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Assets",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Assets"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AssetDeliveryPolicies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/AssetDeliveryPolicies",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"AssetDeliveryPolicies"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AssetFilters",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/AssetFilters",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"AssetFilters"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "IngestManifestFiles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/IngestManifestFiles",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"IngestManifestFiles"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "IngestManifestAssets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/IngestManifestAssets",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"IngestManifestAssets"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "IngestManifestAssets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/IngestManifestAssets",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"IngestManifestAssets"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "StorageAccounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/StorageAccounts",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"StorageAccounts"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Tasks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Tasks",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Tasks"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "NotificationEndPoints",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/NotificationEndPoints",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"NotificationEndPoints"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Jobs",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Jobs"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "TaskTemplates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/TaskTemplates",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"TaskTemplates"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "JobTemplates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/JobTemplates",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"JobTemplates"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "MediaProcessors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/MediaProcessors",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"MediaProcessors"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "EncodingReservedUnitTypes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/EncodingReservedUnitTypes",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"EncodingReservedUnitTypes"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "MonitoringConfigurations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/MonitoringConfigurations",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"MonitoringConfigurations"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Operations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Operations",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Operations"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "StreamingEndpoints",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/StreamingEndpoints",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"StreamingEndpoints"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Channels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Channels",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Channels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Channel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"Id\":null,\r\n\t\"Name\":\"basiclivech01\",\r\n\t\"Description\":\"new live backend channel\",\r\n\t\"EncodingType\": \"Basic\",\r\n\t\"Input\":\r\n\t{\r\n\t\t\"StreamingProtocol\":\"RTMP\",\r\n\t\t\"AccessControl\":\r\n\t\t{\r\n\t\t\t\"IP\": {}\r\n\t\t}\r\n\t},\r\n\t\"Preview\": {}\r\n}  "
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Channels",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Channels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Programs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Programs",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Programs"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Filters",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/atom+xml,application/xml"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BearerToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=minimalmetadata"
+							},
+							{
+								"key": "x-ms-version",
+								"value": "2.17"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{AzureAmsRestApiUri}}/api/Filters",
+							"protocol": "https",
+							"host": [
+								"{{AzureAmsRestApiUri}}"
+							],
+							"path": [
+								"api",
+								"Filters"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
